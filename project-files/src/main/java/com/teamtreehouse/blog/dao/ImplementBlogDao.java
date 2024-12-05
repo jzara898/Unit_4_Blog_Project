@@ -1,6 +1,6 @@
-package com.teamtreehouse.blog.model;
+package com.teamtreehouse.blog.dao;
 
-import com.teamtreehouse.blog.dao.BlogDao;
+import com.teamtreehouse.blog.model.BlogEntry;
 
 import java.util.List;
 
