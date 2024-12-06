@@ -1,0 +1,15 @@
+{{#partial "body"}}
+    <section>
+        <div class="container">
+            <div class="entry-list">
+                {{#each entries}}
+                    <article>
+                        <h2><a href="/entry/{{slug}}">{{title}}</a></h2>
+                        <time datetime="{{createdAt}}">{{createdAt}}</time>
+                    </article>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+{{/partial}}
+{{> layout.hbs}}

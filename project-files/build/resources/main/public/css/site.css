@@ -1,0 +1,321 @@
+css
+Copy
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+body {
+    font-size: 15px;
+    color: #333;
+    font-family: 'Noto Serif', Georgia, serif;
+    background: #444;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px;
+    background: #FFF;
+}
+
+/* Header Styles */
+header .site-header {
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0 auto;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    border: 5px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+
+header .logo:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Tag Styles */
+.tags {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #666;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-family: 'Noto Sans', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background: #e0e0e0;
+    transform: translateY(-1px);
+}
+
+/* Button Styles */
+.button {
+    padding: 8px 12px;
+    text-transform: uppercase;
+    background: #000;
+    border: 3px solid #000;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Noto Sans', sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: transparent;
+    color: #000;
+}
+
+.button.button-secondary {
+    background: transparent;
+    border-color: #000;
+    color: #000;
+}
+
+.button.button-secondary:hover {
+    background: #000;
+    color: #FFF;
+}
+
+.button.button-round {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button.button-delete {
+    background: #ff3b30;
+    border-color: #ff3b30;
+    color: #fff;
+}
+
+.button.button-delete:hover {
+    background: transparent;
+    color: #ff3b30;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #222;
+}
+
+h1 { font-size: 44px; margin-bottom: 15px; }
+h2 { font-size: 28px; margin-bottom: 10px; }
+h3 { font-size: 21px; margin-bottom: 8px; }
+
+/* Entry List Styles */
+.entry-list {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.entry-list article {
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.entry-list article:hover {
+    background: #f9f9f9;
+}
+
+.entry-list article h2 a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.2s ease;
+}
+
+.entry-list article h2 a:hover {
+    color: #666;
+}
+
+.entry-list time {
+    color: #888;
+    font-style: italic;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Comment Styles */
+.entry-comments {
+    background: #f1f1f1;
+    padding: 50px 0;
+}
+
+.entry-comments .container {
+    max-width: 700px;
+    background: transparent;
+}
+
+.comment {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.comment strong {
+    color: #333;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.comment time {
+    color: #888;
+    font-size: 14px;
+    margin: 5px 0 15px;
+    display: block;
+}
+
+/* Form Styles */
+form {
+    margin-top: 30px;
+}
+
+form label {
+    display: block;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input[type=text],
+form input[type=password],
+form textarea {
+    width: 100%;
+    border: 2px solid #e1e1e1;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    font-family: 'Noto Serif', Georgia, serif;
+    transition: all 0.3s ease;
+}
+
+form input[type=text]:focus,
+form input[type=password]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Error Page Styles */
+.error-page {
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.error-page h1 {
+    color: #ff3b30;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.error-page p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* Footer Styles */
+footer {
+    background: #444;
+    padding: 30px 0;
+    text-align: center;
+    color: #999;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 2px solid #666;
+    padding-bottom: 1px;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    h1 { font-size: 36px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 18px; }
+    
+    .entry-list {
+        padding: 40px 0;
+    }
+    
+    .entry-list article {
+        margin-bottom: 30px;
+    }
+    
+    .error-page h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+    
+    .button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .entry-list article {
+        padding: 15px;
+    }
+}
