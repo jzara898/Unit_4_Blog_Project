@@ -32,6 +32,9 @@ public class Main {
             Map<String, Object> model = new HashMap<>();
             List<BlogEntry> entries = dao.findAllEntries();
             System.out.println("Number of entries: " + entries.size());
+            for(BlogEntry entry : entries) {
+                System.out.println("Entry: " + entry.getTitle());
+            }
             model.put("entries", entries);
             return engine.render(new ModelAndView(model, "index.hbs"));
         });
@@ -52,13 +55,6 @@ public class Main {
             }
         });
 
-        // Homepage
-        get("/", (req, res) -> {
-            System.out.println("Homepage route hit");
-            Map<String, Object> model = new HashMap<>();
-            model.put("entries", dao.findAllEntries());
-            return engine.render(new ModelAndView(model, "index.hbs"));
-        });
 
         // Blog entry detail
         get("/entry/:slug", (req, res) -> {
@@ -89,12 +85,6 @@ public class Main {
             }
             res.redirect("/password");
             return null;
-        });
-
-        // New entry form
-        get("/admin/new", (req, res) -> {
-            Map<String, Object> model = new HashMap<>();
-            return engine.render(new ModelAndView(model, "entry-form.hbs"));
         });
 
         // Create new entry
