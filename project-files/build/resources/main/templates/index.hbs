@@ -6,6 +6,11 @@
                     <article>
                         <h2><a href="/entry/{{slug}}">{{title}}</a></h2>
                         <time datetime="{{createdAt}}">{{createdAt}}</time>
+                        <div class="tags">
+                            {{#each tags}}
+                                <span class="tag">{{this}}</span>
+                            {{/each}}
+                        </div>
                     </article>
                 {{/each}}
             </div>
