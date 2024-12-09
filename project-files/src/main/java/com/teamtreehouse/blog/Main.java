@@ -20,9 +20,9 @@ public class Main {
 
         // Add sample posts with debug output
         System.out.println("Adding sample blog posts...");
-        dao.addEntry(new BlogEntry("First Post", "This is my first blog post!", "java,coding"));
-        dao.addEntry(new BlogEntry("Welcome to my Blog", "Thanks for visiting my blog.", "welcome"));
-        dao.addEntry(new BlogEntry("Java Programming", "Java is a great language!", "java,programming"));
+        dao.addEntry(new BlogEntry("First Post", "This is my first blog post!  Thank you for reading.  That's all for now, Goodbye!", "java,coding"));
+        dao.addEntry(new BlogEntry("Welcome to my Blog", "Thanks for visiting my blog.  This blog will feature posts about my journey to becoming a software engineer.  Stay tuned for more.", "welcome"));
+        dao.addEntry(new BlogEntry("Java Programming", "Java is a great language.  It's similar to C++.", "java,programming"));
 
         HandlebarsTemplateEngine engine = new HandlebarsTemplateEngine();
 
