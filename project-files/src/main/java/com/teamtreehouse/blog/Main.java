@@ -131,7 +131,7 @@ public class Main {
             }
             return null;
         });
-
+//TODO jcz: Need to add a flash message for deleted message.  Or, pop-up "Are you sure ? ..."
         // Delete entry
         post("/admin/delete/:slug", (req, res) -> {
             try {
