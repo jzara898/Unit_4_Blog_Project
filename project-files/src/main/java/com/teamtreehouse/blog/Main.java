@@ -146,7 +146,7 @@ public class Main {
             }
             return null;
         });
-
+//TODO jcz: add flash message "Comment successfully posted'
         // Add comment
         post("/entry/:slug/comment", (req, res) -> {
             try {
